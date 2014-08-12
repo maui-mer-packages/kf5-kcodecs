@@ -1,5 +1,5 @@
-Name         : kf5-kcodecs
-Version      : 5.0.0
+Name         : kcodecs
+Version      : 5.1.0
 Release      : 1
 Group        : System/Base
 License      : GPLv2+
@@ -52,11 +52,11 @@ SubPackages:
       Group: Development/Libraries
       Summary: Development files for %{name}
       Description: |
-        The %{name}-devel package contains the files necessary to develop applications |
+        The %{name}-devel package contains the files necessary to develop applications
         that use %{name}.
       Files:
           - "%{_kf5_includedir}/kcodecs_version.h"
           - "%{_kf5_includedir}/KCodecs"
           - "%{_kf5_libdir}/libKF5Codecs.so"
-          - "%{_kf5_libdir}/cmake/KF5Codecs"
-          - "%{_datadir}/qt5/mkspecs/modules/qt_KCodecs.pri"
+          - "%{_kf5_cmakedir}/KF5Codecs"
+          - "%{_kf5_mkspecsdir}/qt_KCodecs.pri"
